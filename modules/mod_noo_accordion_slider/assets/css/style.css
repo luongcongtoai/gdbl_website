@@ -1,0 +1,148 @@
+/**
+ * @version		$Id$
+ * @author		NooTheme
+ * @package		Joomla.Site
+ * @subpackage	mod_noo_accordion_slider
+ * @copyright	Copyright (C) 2013 NooTheme. All rights reserved.
+ * @license		License GNU General Public License version 2 or later; see LICENSE.txt, see LICENSE.php
+*/
+
+.noo-accordion {
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	/*Time for some stylling*/
+	margin: 100px auto;
+	box-shadow:0 0 10px 1px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 0 0 10px 1px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0 0 10px 1px rgba(0,0,0,0.35);
+}
+.noo-accordion ul {
+	width: 100%;
+	margin: 0;
+	padding:0
+}
+.noo-accordion li{
+	position: relative;
+	display: block;
+	width: auto;
+	float: left;
+	box-shadow: 0 0 25px 10px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 25px 10px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0,0,0,0.5);
+
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	height: 500px;
+
+}
+/*Lets Apply hover effects now*/
+.noo-accordion ul:hover li{width: 20%;}
+.noo-accordion ul li:hover{width: 40%;}
+.noo-accordion ul li:hover .image_title {
+	bottom: 0px;
+	top: 0;
+	/*background: url('../images/shadow.png');*/
+	background: -moz-linear-gradient(top, rgba(255,175,75,0) 50%, rgba(255,174,73,0) 50%, rgba(255,146,10,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,rgba(255,175,75,0)), color-stop(50%,rgba(255,174,73,0)), color-stop(100%,rgba(255,146,10,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,175,75,0) 50%,rgba(255,174,73,0) 50%,rgba(255,146,10,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,175,75,0) 50%,rgba(255,174,73,0) 50%,rgba(255,146,10,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,175,75,0) 50%,rgba(255,174,73,0) 50%,rgba(255,146,10,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(255,175,75,0) 50%,rgba(255,174,73,0) 50%,rgba(255,146,10,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffaf4b', endColorstr='#ff920a',GradientType=0 ); /* IE6-9 */
+}
+.noo-accordion ul li:hover .image_title .desc-accordian {
+	display: block;
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	opacity: 1;
+}
+.noo-accordion ul li:hover .image_title .desc-accordian a {
+	color: #fff;
+	float: right;
+	display: block;
+	margin: 10px 0;
+}
+
+.noo-accordion ul li:hover .image_title a.title {background: none;padding: 0 20px;font-size: 50px;font-weight: bold;position: absolute;top: 70%;opacity: 1;}
+
+.noo-accordion li img {display:block;height:100%;overflow: hidden;max-width: none;}
+.noo-accordion .image_title {
+	background: rgba(0,0,0.5);
+	position: absolute;
+	left:0;
+	top:100px;
+	width: 100%;
+}
+.noo-accordion .image_title .desc-accordian {
+	color: #fff;
+	opacity: 0;
+	transition: 2s;
+}
+
+.noo-accordion .image_title a.title {
+	display:block;
+	color: #fff;
+	text-decoration:none;
+	text-transform: uppercase;
+	padding: 10px 50px;;
+	font-size: 20px;
+	background-color: #ccc;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.noo-accordion .image_title a.title {
+	background: #ccc;
+}
+.noo-accordion .image_title a.title_style1 {
+	background: url('../images/title1.png');
+}
+.noo-accordion .image_title a.title_style2 {
+	background: url('../images/title2.png');
+}
+.noo-accordion .image_title a.title_style3 {
+	background: url('../images/title3.png');
+}
+.noo-accordion .image_title a.title_style4 {
+	background: url('../images/title4.png');
+}
+
+.noo-accordion .image_title .desc-accordian {
+	display: none;
+}
+@media screen and (max-width: 600px) {
+	.noo-accordion ul {
+		height: 100%;
+	}
+	.noo-accordion-slider .noo-accordion-item {
+		width: 100%!important;
+		float: left;
+		position: relative;
+	}
+	.noo-accordion li img {
+		width: 100%;
+		height: auto;
+	}
+	.noo-accordion .image_title .desc-accordian {
+		opacity: 0 !important;
+	}
+	.noo-accordion .image_title a {
+		background: none!important;
+		opacity: 0;
+	}
+	.noo-accordion ul:hover li .image_title, .noo-accordion ul:hover li .image_title a {
+		opacity: 1;
+	}
+	.noo-accordion ul li:hover .image_title {
+		background: -moz-linear-gradient(top,  rgba(255,175,75,0) 30%, rgba(255,175,75,0.29) 50%, rgba(255,146,10,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,rgba(255,175,75,0)), color-stop(50%,rgba(255,175,75,0.29)), color-stop(100%,rgba(255,146,10,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(255,175,75,0) 30%,rgba(255,175,75,0.29) 50%,rgba(255,146,10,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(255,175,75,0) 30%,rgba(255,175,75,0.29) 50%,rgba(255,146,10,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(255,175,75,0) 30%,rgba(255,175,75,0.29) 50%,rgba(255,146,10,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(255,175,75,0) 30%,rgba(255,175,75,0.29) 50%,rgba(255,146,10,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffaf4b', endColorstr='#ff920a',GradientType=0 ); /* IE6-9 */
+
+	}
+}

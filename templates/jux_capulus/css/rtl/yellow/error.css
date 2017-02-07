@@ -1,0 +1,112 @@
+
+body {
+  background-color: #fffaf4;
+  color: #333333;
+  font-family: 'Open Sans', sans-serif;
+  background-size: cover;
+}
+.error {
+  margin-top: 11%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .error {
+    margin-top: 15%;
+  }
+}
+@media (max-width: 767px) {
+  .error {
+    margin-top: 25%;
+  }
+}
+.error h1 {
+  float: right;
+  width: 50%;
+  text-align: left;
+  color: #333333;
+  font-size: 208px;
+  font-family: "Wet-Dreamz";
+  font-weight: bold;
+  margin: 0;
+  position: relative;
+}
+.error h1 span {
+  color: #dbbe62;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .error h1 {
+    font-size: 167px;
+  }
+}
+@media (max-width: 767px) {
+  .error h1 {
+    width: 32%;
+    font-size: 73px;
+  }
+}
+.error #main-error {
+  float: right;
+}
+.error #main-error #tittle h2 {
+  margin-top: 18px;
+  margin-bottom: 0;
+  font-family: "Wet-Dreamz";
+  color: #dbbe62;
+  display: inline-block;
+  font-size: 125px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .error #main-error #tittle h2 {
+    font-size: 100px;
+    margin-top: 15px;
+    margin-bottom: -5px;
+  }
+}
+@media (max-width: 767px) {
+  .error #main-error #tittle h2 {
+    font-size: 37px;
+    margin-top: 7px;
+    margin-bottom: -4px;
+  }
+}
+.error #main-error #caption {
+  padding: 4px 10px 5px 10px;
+  margin-right: 4px;
+  margin-left: 7px;
+  text-align: center;
+  display: block;
+  background-color: #dbbe62;
+}
+@media (max-width: 767px) {
+  .error #main-error #caption {
+    padding: 0px 2px 2px 2px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .error #main-error #caption p {
+    font-size: 13px;
+  }
+}
+.error #main-error #caption p {
+  color: #dbdbdb;
+  display: inline-block;
+  font-size: 15.58px;
+  margin: 0px;
+  font-weight: normal;
+}
+.error #main-error #caption p a {
+  color: #FFFFFF;
+  font-weight: normal;
+  padding-right: 3px;
+  text-decoration: underline;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.error #main-error #caption p a:hover {
+  color: #dbdbdb;
+  text-decoration: none;
+}

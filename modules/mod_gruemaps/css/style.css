@@ -1,0 +1,20 @@
+
+#google-container { position: relative; width: 100%;  height: 200px;  background-color: #fff;}
+@media only screen and (min-width: 768px) {
+  #google-container {   height: 200px; }
+}
+#cd-google-map {position: relative;}
+#cd-google-map address {position: absolute; width: 100%; bottom: 0; left: 0; padding: 10px 0; margin:0; background-color: rgba(0, 0, 0, 0.3); color:#fff; font-size: 13px;}
+@media only screen and (min-width: 768px) {
+#cd-google-map address { font-size: 15px;  font-size: 0.9375rem; text-align: center; }
+}
+
+#cd-zoom-in, #cd-zoom-out { height: 32px; width: 32px; cursor: pointer; margin-left: 10px; background-repeat: no-repeat;  background-size: 32px 64px; background-image: url("../img/cd-icon-controller.svg");}
+@media only screen and (min-width: 768px) {
+  #cd-zoom-in, #cd-zoom-out { margin-left: 50px; }
+}
+#cd-zoom-in { background-position: 50% 0; margin-top: 10px; margin-bottom: 1px;}
+@media only screen and (min-width: 768px) {
+#cd-zoom-in { margin-top: 50px; }
+}
+#cd-zoom-out { background-position: 50% -32px;}

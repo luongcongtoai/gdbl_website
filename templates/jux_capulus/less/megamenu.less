@@ -1,0 +1,362 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org 
+ *------------------------------------------------------------------------------
+ */
+
+
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Include Variables and Mixins
+
+
+// EXTEND STYLE IN BASE
+// --------------------
+@import "../../../plugins/system/t3/base-bs3/less/megamenu.less";
+
+//-- MAIN NAVIGATION --
+
+.t3-mainnav.navbar{
+  background: @body-bg;
+  width: 100%;
+  z-index: 99999;  
+  //position: relative;
+ @media (max-width: @screen-xs-max) {
+        width: 50px;
+      position: absolute;
+      }
+}
+.head-menusticky.affix,
+.head-menusticky.affix.fadeInDown,
+.head-menusticky.affix.fadeOutUp {
+      width: 100%;
+      top: 0;
+      z-index: 99999;
+      position: fixed;
+      @media (max-width: @screen-xs-max) {
+        width: 50px;
+        position: fixed;
+        top: initial;
+      }
+
+}
+
+
+
+
+// BASIC STYLE FOR MEGAMENU
+// -------------------------
+.t3-megamenu {
+
+  ul.navbar-nav { // display menu to center
+    float: none;
+    display: inline-block;
+    text-align: left;
+    > li {
+      padding: 0;
+      margin: 0px 15px 0px 15px;
+    }
+  }
+
+  ul.level0 {
+
+
+    > li > a {
+      padding: 0;
+      margin: 10px 10px 10px 10px;
+      color: @text-color;      
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 15px;
+      font-family: @font-family-serif;
+      &:hover,
+      &:focus {
+        // color: @navbar-default-link-hover-color;
+        color: @brand-primary;
+        background-color: @navbar-default-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @brand-primary;
+        background-color: transparent;
+      }
+      b.caret {
+        border-top-color: @brand-primary;
+        border-bottom-color: @brand-primary;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-disabled-color;
+        background-color: @navbar-default-link-disabled-bg;
+      }
+    }
+
+
+    li {
+        // menu level 0
+        a {
+          // title menu level 0
+          .caret {
+            border-top-color: @text-color;
+            border-bottom-color: @text-color;
+          }
+        }
+        > a {
+
+        }
+        div.mega-dropdown-menu {
+          padding-top: 15px;
+          background-color: rgba(65, 58, 52, 0.95);
+          padding-bottom: 20px;
+          a {
+            color: @white;
+          }
+          ul.level1 {
+            div.mega-group-ct {
+              margin-left: 15px;
+              margin-top: 5px;
+            }
+            > li  {
+              a, a.mega-group-title {
+                white-space: normal;
+                display: block;
+                padding: 8px;
+
+                &:hover,
+                &:focus {
+                  text-decoration: none;
+                  color: @brand-primary;
+                  padding-left: 15px;
+                  background: transparent;
+                }
+                -webkit-transition: all .3s ease-out;
+                -moz-transition: all .3s ease-out;
+                -ms-transition: all .3s ease-out;
+                -o-transition: all .3s ease-out;
+                transition: all .3s ease-out;
+              }
+              > a {
+                font-size: 14px;
+                text-transform: uppercase;
+
+              }
+            }
+
+
+            li {
+                // haven't sub-menu
+                a{
+                  // title menu level1
+                  padding-top: 10px;
+                }
+                a.mega-group-title {
+                  padding-top: 12px;
+                }
+              }
+              li.active > a {
+                color : @brand-primary;
+                background: transparent;
+                &:hover {
+                   text-decoration: none;
+                  color: @white;
+                  padding-left: 15px;
+                  background: @brand-primary;
+                }
+               -webkit-transition: all .3s ease-out;
+                -moz-transition: all .3s ease-out;
+                -ms-transition: all .3s ease-out;
+                -o-transition: all .3s ease-out;
+                transition: all .3s ease-out;
+              }
+              li.mega {
+                // have sub-menu level2
+              }
+              li.mega-group {
+                // have sub-menu level2
+                a {
+                // tilte menu level1 have sub-menu item
+              } 
+              div.nav-child {
+                ul.level2 {
+                  li {
+                   a{
+                        // title menu level2 
+                      padding-top: 10px;
+                      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                      opacity: 0.7;
+                      }     
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+        }
+        > li.dropdown.mega-align-right.open > div.mega-dropdown-menu {
+          margin-top: 4px;
+          &:before {
+            content: url(../images/arrow-top.png);
+            top: -14px;
+            right: 25px;
+            position: inherit;
+          }
+        }
+
+        > li.dropdown.mega-align-left.open > div.mega-dropdown-menu {
+          margin-top: 4px;
+          &:before {
+            content: url(../images/arrow-top.png);
+            top: -14px;
+            margin-left: 25px;
+            position: inherit;
+          }
+        }
+        > li.open > a {
+          &,
+          &:hover,
+          &:focus {
+            background-color: transparent;
+            color: @brand-primary;
+          }
+        }
+        > li.dropdown.open > a {
+          .caret {
+            visibility: hidden;
+          }
+        }
+      }
+
+
+  // Menu Grids
+  // ----------
+  .row {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .row + .row  {
+    padding-top: @t3-global-padding / 2;
+    border-top: 1px solid @hr-border;
+  }
+
+
+  // Open dropdowns
+  .active >a , .open > a {
+    color: @brand-primary;
+
+    &,
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+  }
+  
+  .dropdown-header,
+  .mega-nav .mega-group > .dropdown-header,
+  .dropdown-menu .mega-nav .mega-group > .dropdown-header,
+  .dropdown-menu .active .mega-nav .mega-group > .dropdown-header {
+    margin: 0;
+    padding: 0;
+    color: @white;
+    font-size: 14px;
+    // Link states
+    &:hover, &:active, &:focus {
+    }
+  }
+
+  // Group Content
+  .mega-group-ct {
+    .row {
+      margin-left: -(@grid-gutter-width / 2);
+      margin-right: -(@grid-gutter-width / 2);
+    }
+  }
+
+
+  // The caret
+  .mega-nav .dropdown-submenu > a::after {
+    margin-right: 0;
+  }
+
+
+  // Module Title
+  .t3-module .module-title {
+    //.dropdown-header(); // Make the Module Title look like Dropdown Header
+    margin-bottom: 10px;
+  }
+
+    // List in Module
+  // Reset List Style in Module
+  .t3-module ul,
+  .t3-module .nav {
+  }
+
+  .t3-module ul li,
+  .t3-module .nav li {
+    list-style: disc;
+    display: list-item;
+    float: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .t3-module ul li a,
+  .t3-module .nav li a {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    background: none;
+    font: inherit;
+    white-space: normal;
+    // Link states
+    &:hover, &:focus, &:active {
+      background: none;
+      color: inherit;
+      font: inherit;
+    }
+  }
+  
+
+  // The caption
+  // -----------
+  .mega-caption {
+    color: @gray-light;
+    font-size: @t3-font-size-smaller;
+    margin-top: 3px;
+    font-weight: normal;
+  }
+
+
+  // The icon
+  // --------
+  .nav [class^="icon-"],
+  .nav [class*=" icon-"],
+  .nav .fa {
+  }
+
+  // Reset the margin on Input Group Addon
+  .nav .input-group-addon [class^="icon-"],
+  .nav .input-group-addon [class*=" icon-"],
+  .nav .input-group-addon .fa {
+    margin-right: 0;
+  }
+
+  // End
+}

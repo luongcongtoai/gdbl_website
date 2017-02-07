@@ -1,0 +1,198 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background: #fffaf4;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: #fff;
+  -webkit-background-size: cover;
+  
+  -moz-background-size: cover;
+  
+  -o-background-size: cover;
+  
+  background-size: cover;
+}
+img {
+  border: 0 none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#frame {
+  background: url(../../../../images/dot-icon-top.png) no-repeat center;
+  background-position: 49% 30%;
+  margin: 60px auto 0px auto;
+  padding: 20px 20px 40px;
+  max-width: 490px;
+  text-align: center;
+  font-size: 14px;
+  color: #333333;
+}
+#frame .logo-image {
+  border-bottom: 1px solid #ccc7c1;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+#frame h1 {
+  font-size: 50px;
+  margin: auto;
+  background: url(../../../../images/logo.png) no-repeat left top;
+  width: 176px;
+  height: 141px;
+  text-indent: -9999px;
+  display: block;
+}
+#frame > p {
+  font-size: 14.17 px;
+}
+#frame h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+#frame form {
+  margin-top: 20px;
+  text-align: left;
+}
+#frame form label {
+  color: #333333;
+  display: block;
+  margin-bottom: 7px;
+}
+#frame form #form-login-username {
+  float: left;
+}
+#frame form #form-login-password,
+#frame form input.button {
+  float: right;
+}
+#frame form #form-login-remember {
+  float: left;
+}
+#frame form #form-login-remember label {
+  display: inline;
+  font-weight: normal;
+  -webkit-border-radius: 0px !important;
+}
+#frame form #form-login-remember input.inputbox {
+  display: inline;
+  -webkit-border-radius: 0px !important;
+  border: none;
+  margin: 0;
+}
+#form-login-username input.inputbox,
+#form-login-password input.inputbox {
+  border: 0;
+  color: #333333;
+  font-size: 13px;
+  height: 20px;
+  padding: 6px;
+  width: 220px;
+  background: transparent;
+  border: 1px solid #ccc7c1;
+  font-family: 'Open Sans', sans-serif;
+}
+#form-login-username input.inputbox:focus,
+#form-login-password input.inputbox:focus {
+  border: 1px solid #e2a181;
+  background: #e2a181;
+}
+
+.outline {
+  background: none;
+  border: none;
+  color: #7f4317;
+}
+.wrap-offline-message {
+  font-size: 14px;
+  text-align: center;
+}
+.wrap-offline-message h1 {
+  background: url("../../../../images/logo.png") no-repeat scroll center center / 100% auto transparent;
+  color: #fff;
+  display: block;
+  font-size: 36px;
+  height: 52px;
+  line-height: 100%;
+  margin: 0 auto 10px;
+  max-width: 351px;
+  padding: 0;
+  text-indent: -9999px;
+}
+.wrap-offline-message p {
+  color: #fff;
+  font-family: "Georgia";
+  font-size: 17px;
+  margin: 12px 0;
+}
+
+form p {
+  margin: 0;
+  padding: 0;
+}
+form fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+form p {
+  margin-bottom: 20px;
+}
+form br {
+  display: none;
+}
+.wrap-input {
+  overflow: hidden;
+}
+input.button {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+  border: 0;
+  background: #7f4317;
+  font-size: 14px;
+  border-radius: 0;
+  color: #fed5ac;
+  text-transform: capitalize;
+  text-shadow: none;
+  cursor: pointer;
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  opacity: 0.8;
+  background: #e2a181;
+}
+input.button:active,
+input.button:focus,
+input.button:hover {
+  opacity: 1;
+  color: #FFFFFF;
+  -webkit-transition: background 0.2s cubic-bezier(0.17, 0.67, 0.88, 1.25), color 0.2s linear;
+  -moz-transition: background 0.2s cubic-bezier(0.17, 0.67, 0.88, 1.25), color 0.2s linear;
+  -o-transition: background 0.2s cubic-bezier(0.17, 0.67, 0.88, 1.25), color 0.2s linear;
+  transition: background 0.2s cubic-bezier(0.17, 0.67, 0.88, 1.25), color 0.2s linear;
+}
+
+#system-message {
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+#system-message dt {
+  font-weight: bold;
+}
+#system-message dd {
+  margin: 0 0 0 10px;
+}
+#system-message .error {
+  color: #cc3300;
+}
+#system-message ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#system-message ul li {
+  background: url(../../../../images/error.png) no-repeat left 4px;
+  padding: 0px 0px 0px 20px;
+}

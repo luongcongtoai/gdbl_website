@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets>
+	<scripts>
+		<file>js/script.js</file>
+		<file>js/headroom.js</file>		
+		<file>js/SmoothScroll.js</file>
+		<file>js/jquery.parallax-1.1.3.js</file>
+	</scripts>
+
+	<stylesheets>
+		<file>fonts/font-awesome/css/font-awesome.min.css</file>
+		<file>fonts/capulus/stylesheet.css</file>
+		<file>css/animate.css</file>
+		<file>css/sequence-sliding-parallax.css</file>
+	</stylesheets>	
+</assets>

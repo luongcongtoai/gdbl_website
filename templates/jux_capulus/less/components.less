@@ -1,0 +1,537 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org 
+ *------------------------------------------------------------------------------
+ */
+ 
+
+// --------------------------------------------------
+// BOOTSTRAP COMPONENTS STYLES
+// --------------------------------------------------
+
+//
+// TITLES
+// --------------------------------------------------
+
+////////////////////// Joomla List category page //////////////////////////
+.category-item {
+  padding-left: 20px;
+  padding-right: 20px;
+  .page-header {
+        line-height: 100%;
+        padding-top: 0;
+        padding-bottom:0;
+        margin-bottom: 0;
+        border:none;
+        margin-bottom: 15px;
+        a{
+            font-weight: bold;
+            background:@brand-primary;
+            padding:5px 15px;
+            font-size: 18px;
+            color:#FFFFFF;
+            opacity:0.8;
+            text-decoration: none;
+            &:hover{
+                background:@brand-primary;
+                color:#FFFFFF;
+                opacity:1;
+            }
+        }  
+  }
+  .category-desc {
+      img{
+        width: 100%;
+        margin-bottom: 13px;
+      }
+  }
+}
+
+
+////////////////////////Joomla Blog Page category/////////////////////////
+.t3-content {
+  .items-row {
+    border-bottom: 1px solid @line-color;
+    padding-bottom: 25px;
+    margin-bottom: 37px;
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+        padding-bottom: 18px;
+        margin-bottom: 30px;
+    }
+    .left {
+      padding-left: 0;
+      padding-right: 25px;
+      @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+        padding-right: 15px;
+      }
+      @media (max-width: @screen-xs-max) {
+        padding-bottom: 15px;
+        padding-right: 0px;
+      }
+
+    }
+    .right {
+      padding-left: 0;
+       @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+                padding-right: 0;
+              }
+       @media (max-width: @screen-xs-max) {
+
+        }
+        .page-header {
+          padding-bottom: 0;
+          margin: 0 0 10px;
+          h2 {
+                font-size: 26px;
+                @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+                  font-size: 21px;
+                }
+                line-height: 100%;
+                margin: 0;
+                padding:0px 0px 5px 0px;
+                a{
+                  color: @text-color;
+                  text-decoration: none;
+                  &:hover {
+                    color: @brand-primary;
+                  }
+
+                }
+          }
+        }
+
+       .article-info{
+           padding: 0;
+              width: 100%;
+              font-size: 11px;
+              color: #848484;
+              font-style: italic;
+              margin-bottom: 20px;
+               @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+                  margin-bottom: 10px;
+                }
+              a {
+                // Link states
+                &:hover, &:focus, &:active {
+                }
+              }
+              
+              .article-info-term {
+                display: none;
+              }
+             .createdby{
+                  float: left;
+                color: #848484;
+                  display: inline;
+                  font-size: 11px;
+                  margin: 0 0 0 0;
+                  padding: 0 10px 0 0;
+                  text-transform: capitalize;
+                  background:url(../images/border-item-header.png) right center no-repeat;
+                  font-style: italic;
+              }
+              .published{
+                  font-style: italic;
+                  font-size: 11px;
+                  color: #848484;
+              }
+        }
+
+        .readmore {
+          a{
+            border: none;
+            padding: 0;
+            font-size: 12px;
+            margin-top: 10px;
+            color: @brand-primary;
+            opacity: 0.7;
+            &:hover{
+              opacity: 1;
+            }
+          }
+        }
+
+    }
+  }
+}
+
+
+///////////////////// Article infor for each item  content //////////////////
+.item-page {
+    padding-right: 0px;
+    .pull-left.item-image {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+       .article-info{
+           padding: 0;
+              width: 100%;
+              font-size: 11px;
+              color: #848484;
+              font-style: italic;
+              margin-bottom: 20px;
+              a {
+                // Link states
+                &:hover, &:focus, &:active {
+                }
+              }
+              
+              .article-info-term {
+                display: none;
+              }
+             .createdby{
+                  float: left;
+                color: #848484;
+                  display: inline;
+                  font-size: 11px;
+                  margin: 0 0 0 0;
+                  padding: 0 10px 0 0;
+                  text-transform: capitalize;
+                  background:url(../images/border-item-header.png) right center no-repeat;
+                  font-style: italic;
+              }
+              .published{
+                  font-style: italic;
+                  font-size: 11px;
+                  color: #848484;
+              }
+        }
+
+
+}
+// Page Subheader
+// --------------
+.page-subheader {
+  border-bottom: 1px solid @t3-border-color;
+  margin: 0 0 @line-height-computed;
+  .clearfix();
+}
+
+.page-subtitle,
+.page-subheader h2 {
+  line-height: 1;
+  margin: 0;
+}
+
+.page-header + .page-subheader {
+  margin-top: -@line-height-computed; //If there is page header, then omit the space before page subheader
+}
+
+
+// Article Header
+// --------------
+.article-header {
+}
+
+.article-title,
+.article-header h1, {
+  margin: 0 0 @line-height-computed 0;
+}
+
+// Smaller "Article Title" in Blog and List layout
+h2.article-title,
+.article-header h2 {
+}
+
+
+// Item Header
+// -----------
+.item-title {
+  font-weight: bold;
+}
+
+
+
+//
+// MASHEAD & JUMBOTRON
+// --------------------------------------------------
+
+// Jumbotron (jumbotron.less)
+// --------------------------
+.jumbotron {
+
+  h1, h2, h3 {
+    margin-top: 0;
+  }
+
+  p {
+    // Remove margin on last paragraph
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .container & {
+    border-radius: @border-radius-large; // Only round corners at higher resolutions if contained in a container
+  }
+
+  @media screen and (min-width: @grid-float-breakpoint) {
+    .container & {
+    }
+    h1 {
+    }
+  }
+
+}
+
+// Mashead
+// --------
+.masthead {
+  padding: (@t3-global-padding * 2) 0;
+  text-align: center;
+
+  p {
+    // Remove margin on last paragraph
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: @grid-float-breakpoint) {
+    padding: (@t3-global-padding * 4) 0;
+
+    h1 {
+      font-size: @font-size-base * 7;
+    }
+
+    p {
+      font-size: @font-size-base * 2;
+    }
+
+    // Bigger mashead btn
+    .btn-lg {
+      margin-top: @line-height-computed;
+      padding: 18px 42px;
+      font-size: @font-size-base * 1.5;
+    }
+  }
+
+}
+
+
+
+//
+// LABELS & BADGES
+// --------------------------------------------------
+
+// Labels (labels.less)
+// --------------------
+
+.label {
+
+  // Add hover effects, but only for links
+  &[href] {
+    &:hover,
+    &:focus {
+    }
+  }
+
+  // Empty labels collapse automatically (not available in IE8)
+  &:empty {
+    display: none;
+  }
+}
+
+// Colors
+// Contextual variations (linked labels get darker on :hover)
+
+.label-default {
+}
+
+.label-primary {
+}
+
+.label-success {
+}
+
+.label-info {
+}
+
+.label-warning {
+}
+
+.label-danger {
+}
+
+
+// Badges (badges.less)
+// --------------------
+
+// Base classes
+.badge {
+
+  // Empty badges collapse automatically (not available in IE8)
+  &:empty {
+    display: none;
+  }
+}
+
+// Hover state, but only for links
+a.badge {
+  &:hover,
+  &:focus {
+  }
+}
+
+// Quick fix for labels/badges in buttons
+.btn .badge {
+  position: relative;
+  top: -1px;
+}
+
+// Quick fix for labels/badges in page-header- NNTH
+.page-header {
+  .label, .badge {
+    vertical-align: middle;
+  }
+}
+
+
+
+//
+// THUMBNAILS  (thumbnails.less)
+// --------------------------------------------------
+
+// Mixin and adjust the regular image class
+.thumbnail {
+  > img {
+  }
+}
+
+// Add a hover state for linked versions only
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+}
+
+// Image captions
+.thumbnail .caption {
+}
+
+
+
+//
+// ALERTS (alerts.less)
+// --------------------------------------------------
+
+// Base styles
+// -------------------------
+.alert {
+
+  // Headings for larger alerts
+  h4 {
+    color: inherit;
+  }
+
+  // Provide class for links that match alerts
+  .alert-link {
+  }
+
+}
+
+
+// Dismissable alerts
+// ------------------
+.alert-dismissable {
+}
+
+
+// Alternate styles
+// ---------------
+.alert-success {
+}
+
+.alert-info {
+}
+
+.alert-warning {
+}
+
+.alert-danger {
+}
+
+
+
+//
+// MEDIA OBJECTS (media.less)
+// Source: http://stubbornella.org/content/?p=497
+// --------------------------------------------------
+
+// Common styles
+// -------------------------
+.media,
+.media .media {
+}
+
+.media:first-child {
+  margin-top: 0;
+}
+
+.media-object {
+  display: block;
+}
+
+.media-heading {
+  margin: 0 0 5px;
+}
+
+
+// Media image alignment
+// -------------------------
+.media {
+  > .pull-left {
+    margin-right: 10px;
+  }
+  > .pull-right {
+    margin-left: 10px;
+  }
+}
+
+
+// Media list variation
+// -------------------------
+.media-list {
+}
+
+
+
+//
+// WELLS (wells.less)
+// --------------------------------------------------
+// Base class
+.well {
+  blockquote {
+  }
+}
+
+// Sizes
+.well-lg {
+}
+
+.well-sm {
+}
+
+
+
+//
+// TOOLTIPS (tooltips.less)
+// --------------------------------------------------
+
+// Base class
+.tooltip {
+}
+
+// Wrapper for the tooltip content
+.tooltip-inner {
+}
+
+// Arrows
+.tooltip-arrow {
+}

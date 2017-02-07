@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.0" type="template" method="upgrade" client="site">
+	<name>jux_capulus</name>
+	<version>1.0.1</version>
+	<creationDate>January 2015</creationDate>
+	<author>JoomlaUX</author>
+	<authorEmail>contact@joomlaux.com</authorEmail>
+	<authorUrl>http://www.joomlaux.com</authorUrl>
+	<copyright>Copyright (C) 2014 JoomlaUX. All Rights Reserved.</copyright>
+	<license>license GNU/GPL v3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<t3>
+		<base>base-bs3</base>
+	</t3>
+	<description>
+		<![CDATA[
+			<div align="center">
+				<div class="alert alert-success">
+					<span>JUX Capulus - <a href='http://www.joomlaux.com' title='Visit JoomlaUX.com!'>JoomlaUX.com</a> A Multi Purposes Coffee Style Theme.</span><p></p>
+					<span style="color:#FF0000; margin-bottom: 10px;">Note: JUX Capulus requires <a href="http://t3-framework.org/">T3 Framework</a> plugin to be installed and enabled.</span>
+				</div>
+				<style>table.adminform{width: 100%;}</style>
+			</div>
+		]]>
+	</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>thememagic.xml</filename>
+		<filename>templateInfo.php</filename>
+		<filename>templateHook.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>etc</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>images</folder>
+		<folder>tpls</folder>
+		<folder>local</folder>
+		<folder>language</folder>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB.tpl_jux_capulus.ini</language>
+		<language tag="en-GB">en-GB.tpl_jux_capulus.sys.ini</language>
+	</languages>
+
+	<positions>
+		<position>head-search</position>
+		<position>languages</position>
+		<position>mainnav</position>
+		<position>find-capulus</position>
+		<position>slideshow</position>		
+		<position>navhelper</position>
+		<position>navheader</position>
+		<position>navcontent</position>
+		<position>navfooter</position>
+		<position>breadcrumbs</position>
+		<position>off-canvas</position>
+		<position>sidebar</position>
+		<position>footer</position>
+
+		<position>spotlight1-1</position>
+		<position>spotlight1-2</position>
+		<position>spotlight1-3</position>
+		<position>spotlight1-4</position>
+
+		<position>spotlight2-1</position>
+		<position>spotlight2-2</position>
+		<position>spotlight2-3</position>
+		<position>spotlight2-4</position>
+
+		<position>spotlight3-1</position>
+		<position>spotlight3-2</position>
+		<position>spotlight3-3</position>
+		<position>spotlight3-4</position>
+		
+		<position>spotlight4-1</position>
+		<position>spotlight4-2</position>
+		<position>spotlight4-3</position>
+		<position>spotlight4-4</position>
+		
+		<position>footer-0</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>footer-4</position>
+		<position>debug</position>
+	</positions>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/t3/includes/depend">
+
+			<!-- Sample for add or disable template parameters -->
+			<!--fieldset name="menu_params" label="T3_PARAMS_MEGAMENU">
+				<field name="group_disable" type="t3depend" function="@group">
+					<option for="menu_as_bg" value="no">menu_as_bg</option>
+				</field>
+			</fieldset-->
+			
+		</fields>
+	</config>
+	
+	<updateservers>
+		<server type="collection">http://update.joomlaux.com/juxtpl_list.xml</server>
+	</updateservers>
+
+</extension>

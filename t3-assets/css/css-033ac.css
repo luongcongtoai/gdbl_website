@@ -1,0 +1,12 @@
+
+
+/*===============================
+/gdbl/templates/jux_capulus/css/custom.css
+================================================================================*/
+@import url(/gdbl/templates/jux_capulus/fonts/capulus/stylesheet.css);@import url(http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic);
+
+
+/*===============================
+/gdbl/media/mod_languages/css/template.css
+================================================================================*/
+div.mod-languages ul{margin:0;padding:0;list-style:none}div.mod-languages li{margin-left:5px;margin-right:5px}div.mod-languages ul.lang-inline li{display:inline}div.mod-languages ul.lang-block li{display:block}div.mod-languages img{border:none}div.mod-languages a{text-decoration:none}

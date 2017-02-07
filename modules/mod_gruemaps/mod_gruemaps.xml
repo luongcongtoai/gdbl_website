@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="module" client="site" method="upgrade">
+	<name>TheGrue Maps</name> 
+    <version>1.0</version>
+    <creationDate>September, 2015</creationDate>
+    <author>TheGrue.org</author>
+    <authorEmail>support@TheGrue.org</authorEmail>
+    <authorUrl>http://TheGrue.org</authorUrl>
+    <copyright>Copyright 2015 - TheGrue.org</copyright>
+    <license>GNU/GPL</license>
+	<description><![CDATA[
+
+	<div id="thegrue" class="alert alert-success">
+		<h1>TheGrue Maps</h1>	
+		<p>Developed by <a href="http://thegrue.org/" target="_blank">TheGrue.org</a>, licensed under <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU/GPL2</a></p>
+		<p>Nedd help? [<a href="http://thegrue.org/google-maps-joomla-module/" target="_blank"><strong>support / documentaton</strong></a>]</p>
+		<p>Useful: [<a href="http://www.latlong.net/convert-address-to-lat-long.html" target="_blank"><strong>Convert Address to Latitude/Longitude</strong></a>]</p>
+		<p>Thanks to: [<a href="http://codyhouse.co/gem/custom-google-map/" target="_blank"><strong>CodyHouse.co</strong></a>] [<a href="https://www.google.com/maps" target="_blank"><strong>Google Maps</strong></a>]</p>
+	</div>
+
+	]]>
+	</description>
+	
+	<files>
+		<filename module="mod_gruemaps">mod_gruemaps.php</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>img</folder>
+		<filename>index.html</filename>
+
+	</files>
+	<config>
+		<fields name="params">						
+			<fieldset name="basic">
+			
+				<field name="jQuery" type="list" default="0" label="jQuery" description="Enable or Disable the latest jQuery version. Make sure that jQuery is loaded only once on your website.">
+					<option value="0">Disable</option>
+					<option	value="1">Enable</option>
+				</field>			
+			
+				<field name="apikey" type="text" default="" label="Google Maps API key*:" description="" />
+
+				<field name="lat" type="text" default="" label="Latitude*:" description="" />
+				<field name="long" type="text" default="" label="Longitude*:" description="" />
+				
+				<field name="address" type="text" default="" label="Address:" description="" />			
+				<field name="showAddress" type="list" default="1" label="Show Address:" description="Show or hide address on map.">
+					<option value="0">No</option>
+					<option	value="1">Yes</option>
+				</field>
+				
+				<field name="mapH" type="text" default="600px" label="Map Height:" description="" />
+				
+				<field name="zoom" type="list" default="14" label="Map Zoom Level:" description="">
+					<option value="0">0</option>
+					<option	value="1">1</option>
+					<option	value="2">2</option>
+					<option	value="3">3</option>
+					<option	value="4">4</option>
+					<option	value="5">5</option>
+					<option	value="6">6</option>
+					<option	value="7">7</option>
+					<option	value="8">8</option>
+					<option	value="9">9</option>
+					<option	value="10">10</option>
+					<option	value="11">11</option>
+					<option	value="12">12</option>
+					<option	value="13">13</option>
+					<option	value="14">14</option>
+					<option	value="15">15</option>
+					<option	value="16">16</option>
+					<option	value="17">17</option>
+					<option	value="18">18</option>
+					<option	value="19">19</option>
+					<option	value="20">20</option>
+					<option	value="21">21</option>
+					<option	value="22">22</option>
+				</field>
+				
+				<field name="mapC" type="color" default="#2d313f" label="Menu Background" description="Choose background color for first level menu." />				
+
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

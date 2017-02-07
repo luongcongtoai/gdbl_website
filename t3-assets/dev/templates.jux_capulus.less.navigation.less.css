@@ -1,0 +1,129 @@
+.dropdown-menu > li > a {
+  padding: 5px 20px;
+}
+.dropdown-header {
+  padding: 3px 20px;
+  font-size: 13px;
+}
+.dropdown-header a {
+  color: #999999;
+}
+.dropdown-submenu > a:after {
+  border-left-color: #cccccc;
+}
+.dropdown-submenu:hover > a:after {
+  border-left-color: #f5771c;
+}
+.nav > li > .separator {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  line-height: 25px;
+}
+@media (min-width: 768px) {
+  .nav > li > .separator {
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+  }
+}
+.nav .caret {
+  border-top-color: #428bca;
+  border-bottom-color: #428bca;
+}
+.nav a:hover .caret {
+  border-top-color: #2a6496;
+  border-bottom-color: #2a6496;
+}
+.t3-navhelper {
+  border-top: 1px solid #ccc7c1;
+  margin: 0px;
+}
+.t3-navhelper .container .main-navhelper {
+  padding: 14px 0 5px;
+  margin-right: 70px;
+  overflow: hidden;
+}
+.t3-navhelper ul {
+  margin: 0px;
+  padding: 0px;
+}
+.t3-navhelper ul li {
+  display: block;
+  float: left;
+  line-height: 100%;
+  padding: 0 0px;
+  border-right: 1px solid #421F05;
+}
+.t3-navhelper ul li a {
+  text-transform: uppercase;
+  color: #4f4f4f;
+  font-size: 13px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.t3-navhelper ul li a:hover {
+  color: #f5771c;
+  background: none;
+}
+.t3-navhelper ul li.active a {
+  color: #333333;
+  background: none;
+}
+.t3-navhelper ul li:last-child {
+  border-right: none;
+}
+.t3-navhelper ul li:first-child {
+  padding-left: 0px;
+}
+.breadcrumb {
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+}
+.breadcrumb > li + li:before {
+  content: "/\00a0";
+}
+.breadcrumb > .active {
+  color: #999999;
+}
+.breadcrumb .divider {
+  display: none;
+}
+.pagination {
+  width: 100%;
+  display: block;
+}
+.pagination:before,
+.pagination:after {
+  content: " ";
+  display: table;
+}
+.pagination:after {
+  clear: both;
+}
+.pagination .pagination {
+  display: inline-block;
+}
+.counter {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 6px 12px;
+  background-color: #848484;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .counter {
+    float: right;
+  }
+}
+.panel-heading > .dropdown .dropdown-toggle {
+  color: inherit;
+}
+.panel-title > a {
+  color: inherit;
+}

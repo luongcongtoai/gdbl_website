@@ -1,0 +1,42 @@
+@font-face {
+font-family: 'ProximaNova';
+	src: url(proximanova-regular-webfont.eot);
+	src: url('proximanova-regular-webfont.eot') format('eot'),
+	url(proximanova-regular-webfont.woff) format('woff'),
+	url(proximanova-regular-webfont.ttf) format('truetype'),
+	url('proximanova-regular-webfont.svg') format('svg')
+}
+
+@font-face {
+font-family: 'ProximaNova';
+font-weight: 300;
+	src: url(proximanova-light-webfont.eot);
+	src: url('proximanova-light-webfont.eot') format('eot'),
+	url(proximanova-light-webfont.woff) format('woff'),
+	url(proximanova-light-webfont.ttf) format('truetype'),
+	url('proximanova-light-webfont.svg') format('svg')
+}
+
+@font-face {
+font-family: 'ProximaNova';
+font-weight: bold;
+	src: url(proximanova-bold-webfont.eot);
+	src: url('proximanova-bold-webfont.eot') format('eot'),
+	url(proximanova-bold-webfont.woff) format('woff'),
+	url(proximanova-bold-webfont.ttf) format('truetype'),
+	url('proximanova-bold-webfont.svg') format('svg')
+}
+
+@font-face {
+font-family: 'Wet-Dreamz';
+    src: url('Wet-Dreamz-Medium.otf');
+    src: url('Wet-Dreamz-Medium.otf') format('truetype'),
+}
+
+
+@font-face {
+font-family: 'Wet-Dreamz';
+font-weight: bold;
+    src: url('Wet-Dreamz-bold.otf');
+    src: url('Wet-Dreamz-bold.otf') format('truetype'),
+}
